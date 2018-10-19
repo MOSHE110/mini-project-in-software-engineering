@@ -13,7 +13,7 @@ public class Coordinate implements Comparable<Coordinate>
 public Coordinate(@NotNull Coordinate coordinat) { this.CoordinateValu_=coordinat.CoordinateValu_; }
 
     /***************** Getters/Setters **********************/
-    public double getCoordinateValu_() {
+    public double get_Coordinate_Value() {
         return CoordinateValu_;
     }
 
@@ -45,13 +45,13 @@ public Coordinate(@NotNull Coordinate coordinat) { this.CoordinateValu_=coordina
     @NotNull
     public static Coordinate add(@NotNull Coordinate coordinate1, @NotNull Coordinate coordinate2)
     {
-        return new Coordinate(coordinate1.getCoordinateValu_() + coordinate2.getCoordinateValu_());
+        return new Coordinate(coordinate1.get_Coordinate_Value() + coordinate2.get_Coordinate_Value());
     }
 
     @NotNull
     public static Coordinate subtract(@NotNull Coordinate coordinate1, @NotNull Coordinate coordinate2)
     {
-        return new Coordinate(coordinate1.getCoordinateValu_() - coordinate2.getCoordinateValu_());
+        return new Coordinate(coordinate1.get_Coordinate_Value() - coordinate2.get_Coordinate_Value());
     }
 
 /************ ~DTOR *************/
